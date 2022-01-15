@@ -42,4 +42,8 @@ components:
                         type: string
                     pass:
                         type: string
+                    created_on:
+                        type: string
+                    user_id:
+                        type: string
                  
