@@ -25,6 +25,30 @@ paths:
                         application/json:
                             schema:
                                 $ref: '#/components/schemas/users'
+        post:
+            requestBody:
+                content:
+                 application/json:
+                      schema:
+                          type: object
+                          properties:
+                            name:
+                                type: string
+                            email:
+                                type: string
+                            phone:
+                                type: number
+                            role:
+                                type: string
+                            pass:
+                                type: string
+            responses:
+                '200':
+                    description: 'get users'
+                    content:
+                        application/json:
+                            schema:  
+                                $ref: '#/components/schemas/users'
 components:
     schemas:
         users:

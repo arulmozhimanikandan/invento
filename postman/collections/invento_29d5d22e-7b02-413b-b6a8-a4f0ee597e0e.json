@@ -1,0 +1,163 @@
+{
+    "info": {
+        "_postman_id": "80c46a80-ee25-438c-8eb8-f73d78e4f87b",
+        "name": "invento",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "user",
+            "item": [
+                {
+                    "name": "/user",
+                    "id": "a5048588-1b88-4b1f-8dc2-1fa94c6ec9ce",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?all=true&id=et reprehenderit in aute",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "all",
+                                    "value": "true",
+                                    "description": "(Required) "
+                                },
+                                {
+                                    "key": "id",
+                                    "value": "et reprehenderit in aute"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "2f407e5e-954f-410e-9788-146e1c81375c",
+                            "name": "get users",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/user?all=true&id=et reprehenderit in aute",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "user"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "all",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "key": "id",
+                                            "value": "et reprehenderit in aute"
+                                        }
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "cookie": [],
+                            "responseTime": null,
+                            "body": "[\n {\n  \"name\": \"tempor aute\",\n  \"email\": \"eiusmod est\",\n  \"phone\": 77632691.1880135,\n  \"role\": \"in minim commodo ea\",\n  \"pass\": \"sed ipsum deserunt et\",\n  \"created_on\": \"reprehenderit \",\n  \"user_id\": \"nisi cupidatat veniam\"\n },\n {\n  \"name\": \"pariatur laboris incididunt non\",\n  \"email\": \"Ut adipisicing\",\n  \"phone\": -21311397.979586035,\n  \"role\": \"in non ea\",\n  \"pass\": \"sunt Duis elit aliqua\",\n  \"created_on\": \"quis amet reprehenderit velit\",\n  \"user_id\": \"ad ut sunt veniam consectetur\"\n }\n]"
+                        }
+                    ]
+                },
+                {
+                    "name": "/user",
+                    "id": "a9e7cf7a-9c0a-4e8e-80b2-908941654a76",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"magna\",\n    \"email\": \"qui dolore sint\",\n    \"phone\": 8380579.114220232,\n    \"role\": \"cillum aliqua magna occaecat aliquip\",\n    \"pass\": \"velit tempor exercitation in\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/user",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "37a8fd99-13fa-4480-b1a5-aef52bf9dbaf",
+                            "name": "get users",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"name\": \"magna\",\n    \"email\": \"qui dolore sint\",\n    \"phone\": 8380579.114220232,\n    \"role\": \"cillum aliqua magna occaecat aliquip\",\n    \"pass\": \"velit tempor exercitation in\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/user",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "user"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "cookie": [],
+                            "responseTime": null,
+                            "body": "[\n {\n  \"name\": \"culpa ex eiusmod velit\",\n  \"email\": \"voluptate eiusmod do esse\",\n  \"phone\": -180637.93736743927,\n  \"role\": \"sit labore tempor consequat\",\n  \"pass\": \"sit\",\n  \"created_on\": \"dolore non Excepteur\",\n  \"user_id\": \"irure in\"\n },\n {\n  \"name\": \"laboris eiusmod\",\n  \"email\": \"ullamco sed incididunt\",\n  \"phone\": -32736534.43877253,\n  \"role\": \"Lore\",\n  \"pass\": \"voluptate labore ut tempo\",\n  \"created_on\": \"non consequat anim quis\",\n  \"user_id\": \"irure magna ea Duis\"\n }\n]"
+                        }
+                    ]
+                }
+            ],
+            "id": "3534949c-fb05-4e52-8f0a-ded844013940"
+        }
+    ],
+    "variable": [
+        {
+            "id": "14ef5732-2d4f-4c81-9382-a0b08df7f3f5",
+            "key": "baseUrl",
+            "value": "localhost:8081",
+            "type": "string"
+        }
+    ]
+}
