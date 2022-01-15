@@ -1,0 +1,86 @@
+{
+    "info": {
+        "_postman_id": "b02f7c07-30b5-47e3-9e85-3e36f930f744",
+        "name": "invento",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "/user",
+            "id": "df08beb4-b196-49b6-852c-33797c033b23",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/user?all=true&id=velit elit enim",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "user"
+                    ],
+                    "query": [
+                        {
+                            "key": "all",
+                            "value": "true",
+                            "description": "(Required) "
+                        },
+                        {
+                            "key": "id",
+                            "value": "velit elit enim"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "3b0ca5a6-20d8-4e79-bb64-b737d84f7ff5",
+                    "name": "get users",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?all=true&id=velit elit enim",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "all",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "id",
+                                    "value": "velit elit enim"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "[]"
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "id": "3ad0e497-7bb2-4f96-a4dd-79f23c56fd1b",
+            "key": "baseUrl",
+            "value": "localhost:8081",
+            "type": "string"
+        }
+    ]
+}

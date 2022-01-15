@@ -17,15 +17,29 @@ paths:
                   name: id
                   required: false
                   schema:
-                      type: boolean
+                      type: string
             responses:
                 '200':
                     description: 'get users'
                     content:
                         application/json:
                             schema:
-                                type: array
-                                items:
-                                    type: object
-
-                
+                                $ref: '#/components/schemas/users'
+components:
+    schemas:
+        users:
+            type: array
+            items:
+                type: object
+                properties:
+                    name:
+                        type: string
+                    email:
+                        type: string
+                    phone:
+                        type: number
+                    role:
+                        type: string
+                    pass:
+                        type: string
+                 
