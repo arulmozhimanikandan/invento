@@ -1,0 +1,139 @@
+{
+    "info": {
+        "_postman_id": "a6e78801-4be8-4569-8797-40e1da63be0a",
+        "name": "invento",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "/user",
+            "id": "07ca1df5-6e22-4fea-9b84-37b2b9d47435",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/user?all=false",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "user"
+                    ],
+                    "query": [
+                        {
+                            "key": "all",
+                            "value": "false"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "4e255b8e-4026-4876-8b1f-e2f45ca5d815",
+                    "name": "get users",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?all=true",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "all",
+                                    "value": "true"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "[]"
+                },
+                {
+                    "id": "2b7126d2-9bcf-4f47-b7a0-ea5863120a28",
+                    "name": "/user",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/user?id=be2daf9a-a1ab-409d-a659-f00d7f6e214e",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "user"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "be2daf9a-a1ab-409d-a659-f00d7f6e214e"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "X-Powered-By",
+                            "value": "Express"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "key": "Content-Length",
+                            "value": "221"
+                        },
+                        {
+                            "key": "ETag",
+                            "value": "W/\"dd-f8tqYlztW/SJSftdRMpQfAkQs6Q\""
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Sat, 15 Jan 2022 09:14:49 GMT"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        },
+                        {
+                            "key": "Keep-Alive",
+                            "value": "timeout=5"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "[\n    {\n        \"id\": 6,\n        \"name\": \"non officia\",\n        \"email\": \"incididunt veniam dolore\",\n        \"phone\": \"60005260.4425056\",\n        \"role\": \"proident cillum\",\n        \"pass\": \"amet\",\n        \"created_on\": \"2022-01-14T23:03:18.000Z\",\n        \"user_id\": \"be2daf9a-a1ab-409d-a659-f00d7f6e214e\"\n    }\n]"
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "id": "d8323d14-faac-41b6-a8e4-f91f9907ddcc",
+            "key": "baseUrl",
+            "value": "localhost:8081",
+            "type": "string"
+        }
+    ]
+}
